@@ -93,7 +93,9 @@ Add/Update `.eslintrc`
     "browser": true
   },
   "rules": {
-    "semi": 0
+    "semi": 0,
+    "react/jsx-filename-extension": 0,
+    "linebreak-style": 0,
   }
 }
 ```
