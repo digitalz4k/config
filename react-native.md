@@ -46,7 +46,7 @@ org.gradle.jvmargs=-Xmx1536m
 ##### Dependencies
 Add dev dependencies
 ```
-yarn add -D babel-eslint babel-preset-flow eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react flow-bin prettier-eslint
+yarn add -D babel-eslint babel-preset-flow babel-plugin-transform-remove-console eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react flow-bin prettier-eslint
 ```
 
 ##### Scripts
@@ -69,7 +69,12 @@ Add/Update `.babelrc`
 ```
 {
   "presets": ["react-native", "flow"],
-  "retainLines": true
+  "retainLines": true,
+  "env": {
+    "production": {
+      "plugins": ["transform-remove-console"]
+    }
+  }
 }
 ```
 
