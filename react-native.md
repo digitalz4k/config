@@ -149,10 +149,11 @@ Use [Haul Package](https://github.com/callstack/haul) by Callstack
 
 ##### Add dependency
 ```
-yarn add --dev haul
+yarn add -D haul
 ```
 
 ##### Edit android/app/build.gradle
+Add this just below `apply from: "../../node_modules/react-native/react.gradle"`
 ```
 project.ext.react = [
     cliPath: "node_modules/haul/bin/cli.js"
