@@ -172,6 +172,13 @@ This will add a `webpack.haul.js` which can be customized
 yarn haul init
 ```
 
+##### Enable HMR
+Add this to the `index.js`
+
+```
+import 'haul/hot'
+```
+
 ##### Start development server
 ```
 yarn haul start -- --platform android|ios
