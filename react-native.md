@@ -151,6 +151,7 @@ Add/Update `.gitignore`
 ```
 
 ## Advanced Development Packager
+
 Use [Haul Package](https://github.com/callstack/haul) by Callstack
 
 ##### Add dependency
@@ -172,8 +173,16 @@ This will add a `webpack.haul.js` which can be customized
 yarn haul init
 ```
 
+##### Add CLI command to package.json
+```
+"start:android": "haul start --platform android --dev false --minify true --port 3030",
+    "start:android-prod": "haul start --platform android --dev false --minify true",
+    "start:ios": "haul start --platform ios",
+    "start:ios-prod": "haul start --platform ios --dev false --minify true"
+```
+
 ##### Enable HMR
-Add this to the `index.js`
+In case of using single entry component, add this to the `index.js`, else refer to Haul documentation.
 
 ```
 import 'haul/hot'
