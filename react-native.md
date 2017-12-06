@@ -1,3 +1,7 @@
+- [Android best SDK configuration](https://github.com/leonardoballand/config/blob/master/react-native.md#android---support-api-19-to-26)
+- [Fresh project](https://github.com/leonardoballand/config/blob/master/react-native.md#react-native-startup)
+- [Advanced development server](https://github.com/leonardoballand/config/blob/master/react-native.md#advanced-development-packager)
+
 ## React Native SDK configurations
 Platform configurations using the latest SDKs
 
