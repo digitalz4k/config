@@ -143,3 +143,34 @@ Add/Update `.gitignore`
 .env
 .env.*
 ```
+
+## Advanced Development Packager
+Use (Haul Package)[https://github.com/callstack/haul] by Callstack
+
+##### Add dependency
+```
+yarn add --dev haul
+```
+
+##### Edit android/app/build.gradle
+```
+project.ext.react = [
+    cliPath: "node_modules/haul/bin/cli.js"
+]
+```
+
+##### Initialize Haul
+This will add a `webpack.haul.js` which can be customized
+```
+yarn haul init
+```
+
+##### Start development server
+```
+yarn haul start -- --platform android|ios
+```
+
+##### Run or update your bundle app
+```
+react-native run-android|ios
+```
