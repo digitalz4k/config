@@ -153,7 +153,7 @@ yarn add -D haul
 ```
 
 ##### Edit android/app/build.gradle
-Add this just below `apply from: "../../node_modules/react-native/react.gradle"`
+Add this just before `apply from: "../../node_modules/react-native/react.gradle"`
 ```
 project.ext.react = [
     cliPath: "node_modules/haul/bin/cli.js"
