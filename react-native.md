@@ -105,6 +105,8 @@ Add/Update `.eslintrc`
     "semi": 0,
     "react/jsx-filename-extension": 0,
     "linebreak-style": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-use-before-define": 0
   }
 }
 ```
