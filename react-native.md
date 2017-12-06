@@ -145,7 +145,7 @@ Add/Update `.gitignore`
 ```
 
 ## Advanced Development Packager
-Use (Haul Package)[https://github.com/callstack/haul] by Callstack
+Use [Haul Package](https://github.com/callstack/haul) by Callstack
 
 ##### Add dependency
 ```
