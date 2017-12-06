@@ -175,10 +175,10 @@ yarn haul init
 
 ##### Add CLI command to package.json
 ```
-"start:android": "haul start --platform android --dev false --minify true --port 3030",
-    "start:android-prod": "haul start --platform android --dev false --minify true",
-    "start:ios": "haul start --platform ios",
-    "start:ios-prod": "haul start --platform ios --dev false --minify true"
+"start:android": "haul start --platform android",
+"start:android-prod": "haul start --platform android --dev false --minify true",
+"start:ios": "haul start --platform ios",
+"start:ios-prod": "haul start --platform ios --dev false --minify true"
 ```
 
 ##### Enable HMR
